@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutzungsbedingungen – Wattly</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@300;400;700&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #00e5a0;
+    --blue: #00aaff;
+    --bg: #0a0d12;
+    --surface: #111418;
+    --border: rgba(255,255,255,0.07);
+    --text: rgba(255,255,255,0.85);
+    --muted: rgba(255,255,255,0.4);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-mark { width: 40px; height: 40px; flex-shrink: 0; }
+
+  .header-text h1 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--green), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .header-text p {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .page-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+
+  .last-updated {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+  }
+
+  .intro-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  section { margin-bottom: 36px; }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    color: var(--green);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .disclaimer-box {
+    background: rgba(255,100,100,0.05);
+    border: 1px solid rgba(255,100,100,0.15);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 12px;
+  }
+
+  .placeholder {
+    background: rgba(255,170,0,0.08);
+    border: 1px solid rgba(255,170,0,0.2);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: #ffaa00;
+  }
+
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="logo-mark" viewBox="0 0 130 96" fill="none">
+    <defs>
+      <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#00e5a0"/>
+        <stop offset="100%" stop-color="#00aaff"/>
+      </linearGradient>
+    </defs>
+    <path d="M8 10 L34 82 L65 20 L96 82 L122 10" stroke="url(#hg)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M68 6 L60 34 L67 34 L57 74 L77 32 L70 32 L78 6Z" fill="#ffffff"/>
+  </svg>
+  <div class="header-text">
+    <h1>Wattly</h1>
+    <p>All Charging Costs · One Place</p>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Nutzungsbedingungen</h1>
+  <p class="last-updated">ZULETZT AKTUALISIERT: APRIL 2026 &nbsp;·&nbsp; VERSION 1.0</p>
+
+  <div class="intro-card">
+    Durch die Nutzung der App Wattly stimmst du diesen Nutzungsbedingungen zu. Bitte lies sie sorgfältig durch. Die App ist kostenlos und ohne Registrierung nutzbar.
+  </div>
+
+  <!-- 1. Anbieter -->
+  <section>
+    <h2>1. Anbieter</h2>
+    <p>
+      Andreas Netz<br>
+      c/o IP-Management #9769, Ludwig-Erhard-Str. 18, 20459 Hamburg<br>
+      E-Mail: <a href="mailto:wattlyapp.de@gmail.com">wattlyapp.de@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- 2. Leistungsumfang -->
+  <section>
+    <h2>2. Leistungsumfang</h2>
+    <p>Wattly ist eine iOS-App zur privaten Erfassung und Auswertung von Ladekosten für Elektrofahrzeuge. Die App bietet:</p>
+    <ul>
+      <li>Manuelle Erfassung von Ladekosten (Anbieter, kWh, Kosten, Typ)</li>
+      <li>Statistiken und Auswertungen der eigenen Ladesessions</li>
+      <li>Vergleichsrechner Elektroauto vs. Verbrenner</li>
+      <li>CSV-Export und -Import zur Datensicherung</li>
+    </ul>
+    <p>Die App ist für den privaten, nicht-kommerziellen Gebrauch bestimmt. Wattly stellt lediglich ein technisches Hilfsmittel dar und ersetzt keine professionelle Finanz-, Steuer- oder Rechtsberatung.</p>
+  </section>
+
+  <!-- 3. Kostenlosigkeit -->
+  <section>
+    <h2>3. Kosten</h2>
+    <p>Die Nutzung von Wattly v1.0 ist vollständig kostenlos. Es gibt keine Abonnements, keine In-App-Käufe und keine versteckten Gebühren in dieser Version. Zukünftige Versionen können optionale kostenpflichtige Features enthalten, deren Nutzung freiwillig ist.</p>
+  </section>
+
+  <!-- 4. Keine Gewähr für Tarifangaben -->
+  <section>
+    <h2>4. Haftungsausschluss Tarifangaben</h2>
+    <div class="disclaimer-box">
+      ⚠️ Die in der App angezeigten Tarife, Preise und Berechnungen basieren ausschließlich auf den vom Nutzer selbst eingegebenen Daten. Der Anbieter übernimmt keinerlei Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität dieser Angaben. Vor Vertragsabschluss mit einem Ladeanbieter empfiehlt sich die direkte Prüfung der aktuellen Tarife beim jeweiligen Anbieter.
+    </div>
+  </section>
+
+  <!-- 5. Haftung -->
+  <section>
+    <h2>5. Haftungsbeschränkung</h2>
+    <p>Die Haftung des Anbieters für leichte Fahrlässigkeit wird ausgeschlossen, sofern keine wesentlichen Vertragspflichten verletzt wurden. Die Haftung für Vorsatz, grobe Fahrlässigkeit sowie für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit bleibt unberührt.</p>
+    <p>Insbesondere wird keine Haftung für leichte Fahrlässigkeit übernommen für:</p>
+    <ul>
+      <li>Datenverlust durch Deinstallation oder Gerätewechsel</li>
+      <li>Fehlerhafte Berechnungen aufgrund fehlerhafter Nutzereingaben</li>
+      <li>Entscheidungen, die auf Basis der App-Ausgaben getroffen werden</li>
+    </ul>
+  </section>
+
+  <!-- 6. Geistiges Eigentum -->
+  <section>
+    <h2>6. Geistiges Eigentum</h2>
+    <p>Die App, ihr Design, der Quellcode und alle enthaltenen Inhalte sind urheberrechtlich geschützt. Eine Vervielfältigung, Dekompilierung oder anderweitige Nutzung außerhalb der üblichen App-Nutzung ist ohne ausdrückliche schriftliche Genehmigung nicht gestattet.</p>
+    <p>Alle von dir in die App eingegebenen Daten bleiben dein Eigentum. Du behältst die vollständige Kontrolle darüber.</p>
+  </section>
+
+  <!-- 7. Änderungen -->
+  <section>
+    <h2>7. Änderungen</h2>
+    <p>Diese Nutzungsbedingungen können bei wesentlichen Änderungen der App (z.B. Einführung kostenpflichtiger Features) aktualisiert werden. Die aktuelle Version ist stets unter <a href="https://wattlyapp.de">wattlyapp.de</a> abrufbar.</p>
+  </section>
+
+  <!-- 8. Anwendbares Recht -->
+  <section>
+    <h2>8. Anwendbares Recht</h2>
+    <p>Es gilt deutsches Recht. Gerichtsstand ist, soweit gesetzlich zulässig, der Wohnort des Anbieters. Als Verbraucher profitierst du vom Verbraucherschutz deines Wohnsitzlandes innerhalb der EU.</p>
+  </section>
+
+  <!-- 9. Kontakt -->
+  <section>
+    <h2>9. Kontakt</h2>
+    <p>Bei Fragen oder Anliegen erreichst du uns unter:<br>
+    <a href="mailto:wattlyapp.de@gmail.com">wattlyapp.de@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Wattly &nbsp;·&nbsp; <a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="privacy.html">Datenschutzerklärung</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
