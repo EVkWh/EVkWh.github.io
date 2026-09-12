@@ -384,6 +384,25 @@
     line-height: 1.6;
   }
 
+  /* ── WHAT'S NEW ── */
+  .version-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--bg);
+    background: linear-gradient(90deg, var(--green), var(--blue));
+    letter-spacing: 0.1em;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .whatsnew-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
   /* ── SCREENSHOTS ── */
   .screenshots {
     padding: 80px 0;
@@ -518,7 +537,7 @@
     .nobs-grid { grid-template-columns: 1fr; }
     .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
     .stat-item:last-child { border-bottom: none; }
-    .feature-grid { grid-template-columns: 1fr; }
+    .feature-grid, .whatsnew-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -537,7 +556,7 @@
 <section class="hero">
   <p class="hero-eyebrow">⚡ E-Auto Ladekosten · Einfach erfassen</p>
   <h1 class="hero-title">All Charging Costs.<br><span class="grad">One Place.</span></h1>
-  <p class="hero-sub">Ladekosten erfassen · Tarife vergleichen · Verbrenner schlagen</p>
+  <p class="hero-sub">Neu: Autovervollständigung für Adressen, Wisch-Gesten zwischen den Tabs und ein aufgeräumtes Dashboard – Ladevorgänge erfassen war noch nie so schnell.</p>
 
   <div class="hero-cta">
     <a class="btn-primary" href="https://apps.apple.com/app/id6764158879">
@@ -549,13 +568,13 @@
 
   <div class="phones">
     <div class="phone phone-2">
-      <img src="Foto1-Dashboard1.PNG" alt="EVkWh Dashboard">
+      <img src="dashboard.png" alt="EVkWh Dashboard">
     </div>
     <div class="phone phone-1">
-      <img src="Foto7-Vergleich.PNG" alt="EVkWh Vergleich">
+      <img src="vergleich.png" alt="EVkWh Vergleich">
     </div>
     <div class="phone phone-3">
-      <img src="Foto5-Statistik1.PNG" alt="EVkWh Statistik">
+      <img src="statistik.png" alt="EVkWh Statistik">
     </div>
   </div>
 </section>
@@ -579,6 +598,40 @@
     <span class="stat-label">Ladevorgänge</span>
   </div>
 </div>
+
+<!-- WHAT'S NEW -->
+<section class="features" id="whatsnew">
+  <p class="section-eyebrow">Update</p>
+  <h2 class="section-title">Was ist neu<span class="version-tag">v1.1</span></h2>
+
+  <div class="feature-grid whatsnew-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(0,229,160,0.1)">⚡</div>
+      <h3>Schneller erfassen</h3>
+      <p>Autovervollständigung für Ort und EVSE-ID – antippen und übernehmen (Tap-to-Apply).</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(0,170,255,0.1)">📱</div>
+      <h3>Übersichtlicher</h3>
+      <p>Wisch-Gesten zwischen den Tabs und ein neues, aufgeräumtes Einstellungen-Menü.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(167,139,250,0.1)">📊</div>
+      <h3>Genauere Auswertung</h3>
+      <p>Ø €/kWh jetzt korrekt getrennt nach „Bezahlt" und „Gesamt" – plus neuer HPC/DC-Leistungshinweis beim Ladetyp.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon" style="background:rgba(255,159,64,0.1)">🎨</div>
+      <h3>Sonstiges</h3>
+      <p>Diverse Farbkonsistenz-Fixes in der gesamten App.</p>
+    </div>
+
+  </div>
+</section>
 
 <!-- FEATURES -->
 <section class="features">
@@ -634,28 +687,24 @@
   </div>
   <div class="screenshot-scroll">
     <div class="screenshot-item">
-      <img src="Foto1-Dashboard1.PNG" alt="Dashboard">
+      <img src="dashboard.png" alt="Dashboard">
       <p class="screenshot-caption">Dashboard</p>
     </div>
     <div class="screenshot-item">
-      <img src="Foto2-Dashboard2.PNG" alt="Ladevorgänge">
-      <p class="screenshot-caption">Ladevorgänge</p>
-    </div>
-    <div class="screenshot-item">
-      <img src="Foto3-Neu-screen.PNG" alt="Neu">
-      <p class="screenshot-caption">Neu erfassen</p>
-    </div>
-    <div class="screenshot-item">
-      <img src="Foto5-Statistik1.PNG" alt="Statistik">
+      <img src="statistik.png" alt="Statistik">
       <p class="screenshot-caption">Statistik</p>
     </div>
     <div class="screenshot-item">
-      <img src="Foto7-Vergleich.PNG" alt="Vergleich">
+      <img src="vergleich.png" alt="Vergleich">
       <p class="screenshot-caption">Vergleich</p>
     </div>
     <div class="screenshot-item">
-      <img src="Foto8-Analyse.PNG" alt="Analyse">
+      <img src="analyse.png" alt="Analyse">
       <p class="screenshot-caption">Analyse</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="einstellungen.png" alt="Einstellungen">
+      <p class="screenshot-caption">Einstellungen</p>
     </div>
   </div>
 </section>
