@@ -403,6 +403,46 @@
     margin: 0 auto;
   }
 
+  .changelog-archive {
+    margin-top: 56px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .changelog-archive summary {
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 12px 0;
+    transition: color 0.2s;
+  }
+
+  .changelog-archive summary:hover { color: var(--text); }
+
+  .changelog-archive summary::-webkit-details-marker { display: none; }
+
+  .changelog-archive summary::after { content: ' ▾'; }
+
+  .changelog-archive[open] summary::after { content: ' ▴'; }
+
+  .archive-entry { margin-top: 32px; }
+
+  .archive-version {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
   /* ── SCREENSHOTS ── */
   .screenshots {
     padding: 80px 0;
@@ -604,35 +644,64 @@
 <!-- WHAT'S NEW -->
 <section class="features" id="whatsnew">
   <p class="section-eyebrow">Update</p>
-  <h2 class="section-title">Was ist neu<span class="version-tag">v1.1</span></h2>
+  <h2 class="section-title">Was ist neu<span class="version-tag">v1.2</span></h2>
 
-  <div class="feature-grid whatsnew-grid">
+  <div class="feature-grid">
 
     <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(0,229,160,0.1)">⚡</div>
-      <h3>Schneller erfassen</h3>
-      <p>Autovervollständigung für Ort und EVSE-ID – antippen und übernehmen (Tap-to-Apply).</p>
+      <div class="feature-icon" style="background:rgba(0,229,160,0.1)">🚗</div>
+      <h3>Mein EV</h3>
+      <p>Mehrere Fahrzeuge anlegen und Ladevorgänge zuordnen – mit eigener Statistik pro Fahrzeug und optionalem Foto im Dashboard.</p>
     </div>
 
     <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(0,170,255,0.1)">📱</div>
-      <h3>Übersichtlicher</h3>
-      <p>Wisch-Gesten zwischen den Tabs und ein neues, aufgeräumtes Einstellungen-Menü.</p>
+      <div class="feature-icon" style="background:rgba(0,170,255,0.1)">🔀</div>
+      <h3>Kombi-Vergleich</h3>
+      <p>Karte × Netz zusammen betrachtet: zeigt die günstigste Kombination, mit Hinweis ob echte Ladedaten oder nur Tarifkonditionen zugrunde liegen.</p>
     </div>
 
     <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(167,139,250,0.1)">📊</div>
-      <h3>Genauere Auswertung</h3>
-      <p>Ø €/kWh jetzt korrekt getrennt nach „Bezahlt" und „Gesamt" – plus neuer HPC/DC-Leistungshinweis beim Ladetyp.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="feature-icon" style="background:rgba(255,159,64,0.1)">🎨</div>
-      <h3>Sonstiges</h3>
-      <p>Diverse Farbkonsistenz-Fixes in der gesamten App.</p>
+      <div class="feature-icon" style="background:rgba(167,139,250,0.1)">🔒</div>
+      <h3>Monate sperren</h3>
+      <p>Schützt fertig abgerechnete Monate vor versehentlichen Änderungen.</p>
     </div>
 
   </div>
+
+  <details class="changelog-archive">
+    <summary>Frühere Updates</summary>
+
+    <div class="archive-entry">
+      <p class="archive-version">Version 1.1</p>
+      <div class="feature-grid whatsnew-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(0,229,160,0.1)">⚡</div>
+          <h3>Schneller erfassen</h3>
+          <p>Autovervollständigung für Ort und EVSE-ID – antippen und übernehmen (Tap-to-Apply).</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(0,170,255,0.1)">📱</div>
+          <h3>Übersichtlicher</h3>
+          <p>Wisch-Gesten zwischen den Tabs und ein neues, aufgeräumtes Einstellungen-Menü.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(167,139,250,0.1)">📊</div>
+          <h3>Genauere Auswertung</h3>
+          <p>Ø €/kWh jetzt korrekt getrennt nach „Bezahlt" und „Gesamt" – plus neuer HPC/DC-Leistungshinweis beim Ladetyp.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(255,159,64,0.1)">🎨</div>
+          <h3>Sonstiges</h3>
+          <p>Diverse Farbkonsistenz-Fixes in der gesamten App.</p>
+        </div>
+
+      </div>
+    </div>
+  </details>
 </section>
 
 <!-- FEATURES -->
@@ -707,6 +776,10 @@
     <div class="screenshot-item">
       <img src="einstellungen.png" alt="Einstellungen">
       <p class="screenshot-caption">Einstellungen</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="mein-ev.png" alt="Mein EV">
+      <p class="screenshot-caption">Mein EV</p>
     </div>
   </div>
 </section>
